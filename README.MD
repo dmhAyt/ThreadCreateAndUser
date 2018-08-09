@@ -15,7 +15,6 @@
 4. 建造者模式
 5. 原型模式
  
-<<<<<<< HEAD
 #### 增加了json的从文件中读取，以及 json  读取后转为 xml 文件
 * json 使用了 json-lib 架包，xml 使用了 dom4j 架包。
 * **注意 JSONObeject.fromObeject(是String类型，StringBuffered不行)**

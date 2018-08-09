@@ -26,13 +26,13 @@ public class OperateJsonTest extends TestCase {
   public void test(){
     OperateJson oj = new OperateJson();
     try {
-     String jsonStr =  oj.readJsonFile("hello.json");
+     String jsonStr =  oj.readJsonFile("hello1.json");
       System.out.println(jsonStr);
      JSONObject jsonObject = JSONObject.fromObject(jsonStr);
-      JSONArray json = (JSONArray) jsonObject.get("组别");
+      JSONArray json = (JSONArray) jsonObject.get("读物");
       //================
       Document document = DocumentHelper.createDocument();
-      Element root = document.addElement("组别");
+      Element root = document.addElement("读物");
 
       System.out.println(json.isArray());
       int jsonlength = json.size();
@@ -50,9 +50,9 @@ public class OperateJsonTest extends TestCase {
         for (int j = 0; j <arrrayLength ; j++) {
           JSONObject jo = jsonArray.getJSONObject(j);
           System.out.println(jo.toString());
-          Element element = el.addElement("人");
+          Element element = el.addElement("书本");
           element.addAttribute("id",j+"");
-          JSONObject jos = jo.getJSONObject("人");
+          JSONObject jos = jo.getJSONObject("书本");
           System.out.println(jos.toString());
           Iterator keys1 = jos.keys();
           while (keys1.hasNext()) {
@@ -109,45 +109,45 @@ public class OperateJsonTest extends TestCase {
     OperateJson oj = new OperateJson();
     JSONObject json1 = new JSONObject(false);
     JSONObject people = new JSONObject(false);
-    json1.put("name","dmh");
-    json1.put("number","12345");
-    json1.put("department","中台");
+    json1.put("name","活着");
+    json1.put("author","余华");
+    json1.put("price","55");
 
     JSONObject json2 = new JSONObject(false);
-    json2.put("name","dmh1");
-    json2.put("number","12346");
-    json2.put("department","中台");
+    json2.put("name","平凡的世界");
+    json2.put("author","路遥");
+    json2.put("price","120");
     JSONArray array = new JSONArray();
-    people.put("人",json1);
+    people.put("书本",json1);
     array.add(people);
-    people.put("人",json2);
+    people.put("书本",json2);
     array.add(people);
     JSONObject zu1= new JSONObject(false);
-    zu1.put("华东一组",array);
+    zu1.put("小说",array);
     //----------------------------------------------------
-    json1.put("name","dmh3");
-    json1.put("number","12347");
-    json1.put("department","中台");
-    json2.put("name","dmh4");
-    json2.put("number","12348");
-    json2.put("department","中台");
+    json1.put("name","红楼梦");
+    json1.put("author","曹雪芹");
+    json1.put("price","88");
+    json2.put("name","三国演义");
+    json2.put("author","罗贯中");
+    json2.put("price","88");
     array = new JSONArray();
 
-    people.put("人",json1);
+    people.put("书本",json1);
     array.add(people);
-    people.put("人",json2);
+    people.put("书本",json2);
     array.add(people);
     JSONObject zu2= new JSONObject(false);
-    zu2.put("华东二组",array);
+    zu2.put("名著",array);
 
     JSONArray erea = new JSONArray();
     erea.add(zu1);
     erea.add(zu2);
     JSONObject totall = new JSONObject(false);
-    totall.put("组别",erea);
+    totall.put("读物",erea);
 
     try {
-      oj.writerJsonFile("hello.json",totall.toString());
+      oj.writerJsonFile("hello1.json",totall.toString());
     } catch (IOException e) {
       e.printStackTrace();
     }

@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<组别>
-  <华东一组>
-    <人>
-      <name>haha</name>
-      <number>12345</number>
-      <department>中台</department>
-    </人>
-    <人>
-      <name>haha1</name>
-      <number>12346</number>
-      <department>中台</department>
-    </人>
-  </华东一组>
-  <华东二组>
-    <人>
-      <name>haha3</name>
-      <number>12347</number>
-      <department>中台</department>
-    </人>
-    <人>
-      <name>haha4</name>
-      <number>12348</number>
-      <department>中台</department>
-    </人>
-  </华东二组>
-  <华东三组>
-    <人>
-      <name>haha9</name>
-      <number>12349</number>
-      <department>中台</department>
-    </人>
-  </华东三组>
-</组别>
+<读物>
+  <小说>
+    <书本>
+      <name>活着</name>
+      <author>余华</author>
+      <price>55</price>
+    </书本>
+    <书本>
+      <name>平凡的世界</name>
+      <author>路遥</author>
+      <price>120</price>
+    </书本>
+  </小说>
+  <名著>
+    <书本>
+      <name>红楼梦</name>
+      <author>曹雪芹</author>
+      <price>88</price>
+    </书本>
+    <书本>
+      <name>三国演义</name>
+      <author>罗贯中</author>
+      <price>88</price>
+    </书本>
+  </名著>
+  <外国小说>
+    <书本>
+      <name>老人与海</name>
+      <author>欧内斯特·米勒尔·海明威</author>
+      <price>78</price>
+    </书本>
+  </外国小说>
+</读物>

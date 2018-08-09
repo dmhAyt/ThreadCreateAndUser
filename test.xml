@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<组别><华东一组><人 id="0"><name>dmh</name><number>12345</number><department>中台</department></人><人 id="1"><name>dmh1</name><number>12346</number><department>中台</department></人></华东一组><华东二组><人 id="0"><name>dmh3</name><number>12347</number><department>中台</department></人><人 id="1"><name>dmh4</name><number>12348</number><department>中台</department></人></华东二组></组别>
+<读物><小说><书本 id="0"><name>活着</name><author>余华</author><price>55</price></书本><书本 id="1"><name>平凡的世界</name><author>路遥</author><price>120</price></书本></小说><名著><书本 id="0"><name>红楼梦</name><author>曹雪芹</author><price>88</price></书本><书本 id="1"><name>三国演义</name><author>罗贯中</author><price>88</price></书本></名著></读物>

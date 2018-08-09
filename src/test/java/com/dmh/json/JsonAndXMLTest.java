@@ -11,6 +11,11 @@ public class JsonAndXMLTest extends TestCase {
   @Test
   public void test() throws IOException {
     JsonAndXML jax = new JsonAndXML();
-    jax.jsonToXML("hello.json","test1.xml");
+    jax.jsonToXML("hello.json","test2.xml");
+  }
+  @Test
+  public void testXmlToJson() throws IOException {
+    JsonAndXML jax = new JsonAndXML();
+    jax.xmlToJson("test1.xml","hello.json");
   }
 }
