@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<组别>
+  <华东一组>
+    <人>
+      <name>haha</name>
+      <number>12345</number>
+      <department>中台</department>
+    </人>
+    <人>
+      <name>haha1</name>
+      <number>12346</number>
+      <department>中台</department>
+    </人>
+  </华东一组>
+  <华东二组>
+    <人>
+      <name>haha3</name>
+      <number>12347</number>
+      <department>中台</department>
+    </人>
+    <人>
+      <name>haha4</name>
+      <number>12348</number>
+      <department>中台</department>
+    </人>
+  </华东二组>
+  <华东三组>
+    <人>
+      <name>haha9</name>
+      <number>12349</number>
+      <department>中台</department>
+    </人>
+  </华东三组>
+</组别>
