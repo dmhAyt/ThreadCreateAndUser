@@ -21,4 +21,7 @@
 * json 在 com.dmh.json 包下， xml 在 com.dmh.xml 包下
 =======
  
->>>>>>> 1d8a83b07d0e1e744a462601846a7507ef9151eb
+#### 将 maven 的 结构修改     
+- 将原先的 jar 修改成 web 工程(也就是 war)      
+- 调整了工程的目录结构（可以在项目结构中调整项目的结构，modules 中调整项目 test ，java 代码 资源等目录结构）    
+

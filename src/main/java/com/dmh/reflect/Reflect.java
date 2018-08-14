@@ -14,6 +14,14 @@ public class Reflect {
   private static final String FIELD = "FIELD";
   private static final String METHOD = "METHOD";
 
+  /**
+   *  描述:
+   * @author deng_yt
+   * @date  2018/8/9 22:02
+   * @param className
+   * @param fieldName
+   * @return
+   */
   public Object getFieldValue(Object className, String fieldName)
       throws ClassNotFoundException, IllegalAccessException, InstantiationException, InvocationTargetException {
     Object str = null;
